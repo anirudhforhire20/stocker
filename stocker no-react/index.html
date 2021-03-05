@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Stocker | Dashboard</title>
+	<!-- Bootsrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- JS bundle -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <script src="/static/stockerComponents.js"></script>
+    <link rel="stylesheet" href="/static/stockerStyles.css">
+</head>
+<body>
+	<ul id="stocker-list" class="stockerList">
+	</ul>
+	<script type="text/javascript">
+		for(let i = -5; i <= 5; i++)
+		{
+			let name = 'Name ' + i.toString();
+			let tkr = 'NM-' + i.toString();
+
+			let stock = new stockerListItem(name,tkr,'...',i);
+			stock.render(document.getElementById("stocker-list"));
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+.stockerImg {
+	min-width: 64px;
+	min-height: 64px;
+	background-color: grey;
+}
+
+.stockerListItem {
+	max-width: 50vw;
+	max-height: 70px;
+	display: flex;
+	vertical-align: middle;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stockerItemInfo {
+	display: flex;
+	vertical-align: middle;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.symbol {
+	font-size: 32px;
+}
+.state-green {
+	color: green;
+}
+.state-red {
+	color: red;
+}
+.state-yellow {
+	color: yellow;
+}
+
+.itemState {
+	display: flex;
+	vertical-align: middle;
+	justify-content: space-between;
+	align-items: center;
+}
